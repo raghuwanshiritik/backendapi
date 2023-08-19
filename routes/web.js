@@ -10,9 +10,14 @@ router.get('/view/:id',BlogController.view)
 router.post('/update/:id',BlogController.update)
 router.delete('/delete/:id',BlogController.delete)
 
-//user controller
-router.post('/register',UserController.userregister)
-router.post('/login',UserController.verifylogin)
+//UserController
+router.post('/userinsert',UserController.userinsert)
+router.post('verify_login', UserController.verify_login)
+router.get('/me',UserController.getuserdetail)
+router.get('/getalluser',UserController.getalluser)
+router.post('/updatepassword',UserController.change_password)
+router.post('/updateprofile',UserController.profile_update)
+router.get('/',UserController.logout)
 
 
 
