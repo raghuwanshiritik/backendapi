@@ -7,6 +7,7 @@ const web =require('./routes/web')
 const session = require('express-session')
 const flash = require('connect-flash');
 const cookieParser =require('cookie-parser')
+const cors = require('cors')
 
 
 

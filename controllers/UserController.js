@@ -110,7 +110,7 @@ class UserController {
     static getuserdetail = async (req, res) => {
         try {
             //console.log(req.user);
-            const user = await userModel.findById(req.user.id);
+            const user = await UserModel.findById(req.user.id);
 
             res.status(200).json({
                 success: true,
